@@ -476,7 +476,7 @@ section {
 }
 
 .stars label:before {
-    content: "\2605"; /* Código de estrella Unicode */
+    content: "\2605"; 
 }
 
 #review {
@@ -504,4 +504,16 @@ section {
 #btn-enviar:hover {
     background: #e39403;
     color: #fff;
+}
+
+.footer {
+    position: fixed;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.texto-footer {
+    position: relative;
+    bottom: 5px;
+    left: 40%;
 }
