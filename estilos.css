@@ -236,3 +236,40 @@ section {
     max-height: 400px;
     
 }
+
+.fundamento_cuidado {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fundamento_titulo {
+    position: relative;
+    left: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contenedor_fundamento {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fundamento_item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.fundamento_item:nth-child(odd) {
+    align-self: flex-start; 
+}
+
+.fundamento_item:nth-child(even) {
+    align-self: flex-end; 
+}
