@@ -16,3 +16,107 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+    padding: 5px 30px;
+    height: 70px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 40px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background:rgba(0, 0, 0, 0.7) ;
+    border-radius: 6px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.banner ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+
+}
+
+.banner li {
+    width: 100%;
+    list-style: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 700px;
+}
+
+.texto {
+    position: relative;
+    bottom: 400px;
+    left: 420px;
+    display: flex;
+    flex-direction: column;
+    color:black;
+    font-size: 20px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
